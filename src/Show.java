@@ -2,10 +2,10 @@ import java.time.Duration;
 import java.util.ArrayList;
 
 public class Show {
-    private String title;
-    private Duration duration;
-    private Director director;
-    private ArrayList<Actor> listOfActors;
+    protected String title;
+    protected Duration duration;
+    protected Director director;
+    protected ArrayList<Actor> listOfActors;
 
     public Show(String title, Duration duration, Director director, ArrayList<Actor> listOfActors) {
         this.title = title;

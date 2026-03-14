@@ -8,10 +8,10 @@ public class Theatre {
         Actor actor1 = new Actor("Ivan", "Leshchev", Gender.MALE, 185);
         Actor actor2 = new Actor("Ekaterina", "Leshcheva", Gender.FEMALE, 163);
         Actor actor3 = new Actor("Vladimir", "Kuznetsov", Gender.MALE, 120);
-        Director director1 = new Director("Petr", "Vasko", Gender.MALE, 170, 30);
-        Director director2 = new Director("Wo", "Glent", Gender.FEMALE, 150, 57);
-        Person musicAuthor = new Person("Petr", "Chay", Gender.MALE, 177);
-        Person choreographer = new Person("Yana", "Kutuzova", Gender.FEMALE, 156);
+        Director director1 = new Director("Petr", "Vasko", Gender.MALE, 30);
+        Director director2 = new Director("Wo", "Glent", Gender.FEMALE, 57);
+        Person musicAuthor = new Person("Petr", "Chay", Gender.MALE);
+        Person choreographer = new Person("Yana", "Kutuzova", Gender.FEMALE);
 
         //task2
         Show classicalShow = new Show("Harry Poter", Duration.ofMinutes(120), director1, new ArrayList<>());
@@ -37,19 +37,17 @@ public class Theatre {
         System.out.println();
 
         //task5
-        classicalShow.replaceActor(actor3,"Leshchev");
+        classicalShow.replaceActor(actor3, "Leshchev");
         classicalShow.printActorsInfo();
         System.out.println();
 
         //task6
-        opera.replaceActor(actor3,"someSurname");
+        opera.replaceActor(actor3, "someSurname");
         System.out.println();
 
         //task7
         opera.printLibrettoText();
         ballet.printLibrettoText();
-
-
     }
 
 }
